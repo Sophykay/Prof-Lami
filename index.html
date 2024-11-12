@@ -14,11 +14,8 @@
     <meta data-react-helmet="true" name="twitter:description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta name="author" content="Sophia Kwaghzan & Collins Okoroafor">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Home | Prof Lami Nnamonu | Portfolio</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/css/materialize.min.css"> -->
+    <title>Prof Lami Nnamonu | Portfolio</title>
     <link rel="stylesheet" href="css/materialize.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
@@ -30,9 +27,11 @@
         }
 
         p {
-            /* font-size: 24pt !important;
-            line-height: 8vh; */
             text-align: justify;
+        }
+
+        section#contact a:hover {
+            text-decoration: underline !important;
         }
     </style>
 </head>
@@ -84,15 +83,13 @@
                     <img src="img/IMG_0237.jpg" class="responsive-img">
                 </li>
                 <li>
-                    <img src="img/WhatsApp Image 2024-09-24 at 3.18.10 PM.jpeg" class="responsive-img">
-                </li>
-                <li>
                     <img src="img/IMG_8641.JPG" class="responsive-img">
                 </li>
             </ul>
         </div>
     </header>
     <main>
+        <!-- Intro Section -->
         <section class="section" id="intro">
             <div class="section container">
                 <h1 class="indigo-text text-darken-4 center-align">Nigeria's First Professor of Agrochemistry</h1>
@@ -102,6 +99,7 @@
                 </div>
             </div>
         </section>
+        <!-- Publication Section -->
         <section class="section black white-text" id="publications">
             <div class="container">
                 <h1>Publications </h1>
@@ -149,7 +147,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Projects Section -->
         <section class="section indigo darken-4 white-text" id="projects">
             <div class="section container">
                 <div class="row">
@@ -187,23 +185,23 @@
                 </div>
             </div>
         </section>
-
+        <!-- Contact Section -->
         <section class="section" id="contact">
             <div class="container section">
                 <div class="row">
                     <div class="col s12 l6">
                         <h3>Send a Message</h3>
                         <p class="flow-text">Phone: 
-                            <a href="tel:+2348054475757" target="_blank">+234 805 447 5757,
+                            <a href="tel:+2348054475757" target="_blank" class="indigo-text text-darken-4">+234 805 447 5757;
                             </a>
                             <br>
-                            <a href="tel:+2348066321522" target="_blank">+234 806 632 1522
+                            <a href="tel:+2348066321522" target="_blank" class="indigo-text text-darken-4">+234 806 632 1522
                             </a>
                         </p>
                         <p class="flow-text">Email:
-                            <a href="mailto:lannamonu@uam.edu.ng" target="_blank">lannamonu@uam.edu.ng</a>
+                            <a href="mailto:lannamonu@uam.edu.ng" target="_blank" class="indigo-text text-darken-4">lannamonu@uam.edu.ng;</a>
                             <br> 
-                            <a href="mailto:lannamonu@cipessfuam.edu.ng" target="_blank">lannamonu@cipessfuam.edu.ng</a>
+                            <a href="mailto:lannamonu@cipessfuam.edu.ng" target="_blank" class="indigo-text text-darken-4">lannamonu@cipessfuam.edu.ng</a>
                         </p>
                     </div>
                     <div class="col s12 l6">
@@ -277,7 +275,7 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
-            $('.slider').slider({height: 1080, indicators: false});
+            $('.slider').slider({height: 700, indicators: false});
             $('.materialboxed').materialbox();
             $('.scrollspy').scrollSpy();
         });
