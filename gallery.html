@@ -9,55 +9,81 @@
     <meta data-react-helmet="true" property="og:title" content="Prof Lami Nnamonu">
     <meta data-react-helmet="true" property="og:description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta data-react-helmet="true" property="og:type" content="website">
-    <!-- <meta data-react-helmet="true" property="og:url" content=""> -->
     <meta data-react-helmet="true" property="og:site_name" content="Prof Lami Nnamonu | Portfolio">
     <meta data-react-helmet="true" name="twitter:title" content="Prof Lami Nnamonu | Portfolio">
     <meta data-react-helmet="true" name="twitter:description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta name="author" content="Sophia Kwaghzan & Collins Okoroafor">
-    <title>Document</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Import Google Icon Font-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Prof Lami Nnamonu | Portfolio</title>
+    <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Prof lami Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
     <style>
-        header{
-            background: url(img/IMG_0226-gallery.jpg);
-            background-size: cover;
-            background-position: center;
-            min-height: 200px;
+        * {
+            font-family: "Faculty Glyphic", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
-        @media screen and (max-width: 400px) { 
-            header{
-                min-height: 250px;
-            }
+
+        p {
+            text-align: justify;
+        }
+
+        section#contact a:hover {
+            text-decoration: underline !important;
         }
     </style>
 </head>
- <!-- Navbar Below -->
- <nav class="indigo darken-4">
-    <div class="container nav-wrapper">
-      <a href="/" class="brand-logo hide-on-med-and-down">
-        <img src="img/favicon.png" alt="main logo" style="max-width: 4%;">
-      </a>
-      <a href="/" class="brand-logo hide-on-large-only center center-align">
-        <img src="img/main-logo.jpg" alt="" class="hide-on-large-only" style="max-width: 30%;">
-      </a>
-      <a href="#" data-target="mobile" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="">Home</a></li>
-        <li><a href="">About Nnamonu</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Publications</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 <body>
-     <main>
+    
+    <header id="top scrollspy">
+        <!-- Navbar Below -->
+        <div class="navbar-fixed indigo darken-4" >
+            <nav class="indigo darken-4">
+                <div class="container nav-wrapper">
+                    <a href="/" class="brand-logo hide-on-med-and-down" style="max-width: 15%;">
+                        <img src="img/main-logo.jpg" alt="main logo" width="50%">
+                    </a>
+                    <a href="/" class="brand-logo hide-on-large-only center center-align">
+                        <img src="img/main-logo.jpg" alt="" class="hide-on-large-only" style="max-width: 30%;">
+                    </a>
+                    <a href="#" data-target="mobile" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Nnamonu</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/publication.html">Publications</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Side Nav -->
+        <ul class="sidenav" id="mobile">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Nnamonu</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/publication.html">Publications</a>/li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Main Slider -->
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                  <img src="img/" class="responsive-img"> 
+              </li>
+            </ul>
+        </div>
+    </header>
+    <main>
       <section class="container section"id="Gallery Photos">
         <h2 class="indigo-text text-darken-4">Gallery Photos</h2>
         <div class="row">
